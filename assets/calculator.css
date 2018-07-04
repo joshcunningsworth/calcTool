@@ -10,26 +10,30 @@
     max-width: 1200px;
 }
 
-#banner{
-    background-color: rgb(220, 235, 255);
-    margin-bottom: -20px;
-    padding: 5px;
-    text-align: center;
+.navbar{
+    margin: -10px 0 0 0;
 }
 
-#banner h1{
+.navbar h1{
     font-size: 2em;
     text-decoration: underline;
     color: rgb(5, 15, 90);
     font-family: 'Shrikhand', cursive;
+    padding: 0 0 0 20px;
 }
 
-#banner p{
+.navbar p{
     font-size: .9em;
+    padding: 0 0 0 20px;
+    margin-top: -5px;
 }
 
 #calcTool main{
     background-color: #444;
+    border-style: solid;
+    border-color: #000;
+    border-left: none;
+    border-right: none;
 }
 
 #calcTool main section{
@@ -41,6 +45,15 @@
     background-repeat: no-repeat;
     background-position: center 5px;
     background-size: 63px 100px;
+}
+
+#calcTool main .inc, .hal, .cfl{
+    border-left: 1px solid black;
+}
+
+#calcTool main .led{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 #calcTool main::after{
@@ -151,17 +164,21 @@
     width: 50px;
     text-align: left;
     font-size: 1em;
+    font-weight: bold;
+    color: black;
     padding: 2px 0 2px 3px;
 }
 
 #calcTool form select{
     font-size: 1em;
+    font-weight: bold;
     -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     -o-appearance: none;
     appearance: none;
-    background: #fff url(images/icons_arrows.svg) no-repeat right 4px;
+    color: black;
+    background: #fff url(images/icons_arrows.svg) no-repeat right 1px top 6px;
     background-size: 30px 20px;
     padding: 3px 30px 3px 5px;
 }
@@ -172,12 +189,10 @@
 
 #instructions{
     background-color: rgba(230, 230, 230, 1);
-}
-
-#instructions p{
-    font-size: .9em;
-    padding: 0 0 0 20px;
-    margin-top: -10px;
+    border-style: solid;
+    border-color: #000;
+    border-left: none;
+    border-right: none;
 }
 
 #instructions h4{
@@ -185,37 +200,42 @@
     font-size: 1em;
     letter-spacing: 0px;
     margin: 0 0 5px 0;
-    padding: 5px;
+    padding: 10px 0 10px 20px;
     text-transform: uppercase;
 }
 
+#instructions p{
+    font-size: .9em;
+    padding: 0 0 0 30px;
+    margin-top: -10px;
+}
+
 #fineprint{
-    font-size: .7em;
+    font-size: .6em;
     font-weight: bold;
+    padding: 0 10px;
 }
 
 /* Beginning of mobile display styles */
 
-@media screen and (max-width:600px){
+@media screen and (max-width:500px){
     #calcTool{ font-size: 1em; }
 
-    #banner h1{ font-size: 1.5em; text-align: right; padding-right: 15px; }
-    #banner p{ font-size: .8em; text-align: right; }
-
     #calcTool main section{ background-size: 45px 71px; padding-top: 80px; }
-    #calcTool main h4{ margin: 0; font-size: .85em; letter-spacing: 0; }
-    #calcTool main p{ font-size: 1.1em; }
-    #calcTool main p + p{ font-size: .9em; }
+    #calcTool main h4{ margin: 0; font-size: 1em; letter-spacing: 0; }
+    #calcTool main p{ font-size: 1.2em; }
+    #calcTool main p + p{ font-size: 1em; }
     #calcTool main p + p::after{ display: block; margin-top: -10px; color: rgba(255, 255, 255, .6) }
 
-    #calcTool form h4{ font-size: 1.1em; margin: 0; }
-    #calcTool form p{ font-size: .8em; line-height: 14px; }
+    #calcTool form h4{ font-size: 1.2em; margin: 0; }
+    #calcTool form p{ font-size: 1em; line-height: 14px; }
     #calcTool form br{ display: inline; }
-    #calcTool form input[type=number]{ font-size: .8em; width: 50px; padding: 3px 0 3px 3px; }
-    #calcTool form select{ font-size:.8em; padding: 5px 20px 5px 5px; }
+    #calcTool form input[type=number]{ font-size: .9em; width: 50px; padding: 3px 0 3px 3px; }
 
-    #instructions p{ font-size: .75em; line-height: 18px; }
-    #instructions h4{ font-size: .85em; }
+    #calcTool form select{ font-size:.9em; padding: 4px 25px 3px 4px; }
+
+    #instructions p{ font-size: .89em; line-height: 18px; }
+    #instructions h4{ font-size: 1em; }
 
     #fineprint{ font-size: .6em; font-weight: bold; }
 }
