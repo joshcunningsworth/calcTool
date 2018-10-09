@@ -18,11 +18,6 @@
 	</div>
 
 	<div id="calcTool" ng-controller="CalculatorController">
-		<div id="banner">
-			
-			
-		</div>
-
 		<main>
 			<section class="inc">
 				<div>
@@ -71,7 +66,7 @@
 				<h4>kWh</h4>
 				<p>Kilowatt-<br>hour cost*</p>
 				
-				<!-- planning to embed the cents sign within the input field. -->
+				<!-- was planning to embed the cents sign within the input field. -->
 				<!-- <span class="currencyinput">¢<input type="text" name="currency"></span> -->
 				
 				¢ <input type="number" ng-change="calculate()" ng-model="cost_selected"
@@ -108,6 +103,12 @@
 				*Cost per Kilowatt-hour should be provided by your power/utility company.
 		</div>
 	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<span class="text-muted"><a href="https://github.com/joshcunningsworth/calcTool">GitHub<i class="fa fa-github"></i></a></span>
+		</div>
+	</footer>
 
 </body>
 </html>

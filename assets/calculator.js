@@ -8,15 +8,15 @@
 
         $scope.lumens_options = [375, 600, 900, 1125, 1600];
         $scope.lumens_selected = 600;
-        $scope.cost_selected = 12
+        $scope.cost_selected = 12;
         $scope.hours_selected = 3;
         $scope.number_selected = 1;
         $scope.total_days = 365;
         
-        $scope.inc_conversion = .0625;
-        $scope.hal_conversion = .0450;
-        $scope.cfl_conversion = .0146;
-        $scope.led_conversion = .0125;
+        $scope.inc_conversion = 0.0625;
+        $scope.hal_conversion = 0.0450;
+        $scope.cfl_conversion = 0.0146;
+        $scope.led_conversion = 0.0125;
 
         $scope.calculate = function(){
             $scope.inc_wattage = (($scope.lumens_selected * $scope.inc_conversion) * $scope.number_selected).toFixed(1);

@@ -1,0 +1,25 @@
+{
+  "name": "energy-calctool",
+  "version": "1.0.0",
+  "description": "calculate yearly cost of different bulbs",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshcunningsworth/calcTool.git"
+  },
+  "author": "Josh Cunningham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshcunningsworth/calcTool/issues"
+  },
+  "homepage": "https://github.com/joshcunningsworth/calcTool#readme"
+}
