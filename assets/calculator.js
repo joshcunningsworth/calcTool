@@ -37,7 +37,7 @@
             $scope.cfl_cost = ((($scope.cfl_wattage * total_hours) / 1000) * cost).toFixed(2);
             $scope.led_cost = ((($scope.led_wattage * total_hours) / 1000) * cost).toFixed(2);
             
-        }
+        };
 
         $scope.calculate();
 
